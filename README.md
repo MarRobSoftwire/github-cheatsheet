@@ -11,7 +11,7 @@ General list of all commands used regularly, possibly some errors here and there
 
 `git push` to push to github
 
-`-f` to force push ** ONLY USE WHEN REBASING **
+`-f` to force push **ONLY USE WHEN REBASING**
 
 `--set-upstream origin <branch-name>` to Create new upstream branch
 
