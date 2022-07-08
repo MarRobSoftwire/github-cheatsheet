@@ -11,9 +11,9 @@ General list of all commands used regularly, possibly some errors here and there
 
 `git push` to push to github
 
-`-f` to force push **ONLY USE WHEN REBASING**
+ - `-f` to force push **ONLY USE WHEN REBASING**
 
-`--set-upstream origin <branch-name>` to create new upstream branch
+ - `--set-upstream origin <branch-name>` to create new upstream branch
 
 `git log` to view log of commits - q to exit
 
@@ -25,7 +25,7 @@ General list of all commands used regularly, possibly some errors here and there
 
 `git checkout <branch-name>` to move branch
 
-`-b` to make new branch
+ - `-b` to make new branch
 
 `git branch`to see branches
 
@@ -33,23 +33,23 @@ General list of all commands used regularly, possibly some errors here and there
 
 `git rebase <new-base>` to rebase current branch
 
- `--continue` to continue the rebase after fixing merge conflicts
+  - `--continue` to continue the rebase after fixing merge conflicts
 
 
 ## Adding to remote github
 
-`add`
+- `add`
 
-`commit`
+- `commit`
 
-`push`
+- `push`
 
 ## Rebase a branch
 
-`checkout` 
+- `checkout` 
 
-`rebase`
+- `rebase`
 
-_Fix conflicts_
+- _Fix conflicts_
 
-`rebase --continue`
+- `rebase --continue`
