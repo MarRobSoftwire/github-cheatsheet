@@ -2,11 +2,12 @@
 
 General list of all commands used regularly, possibly some errors here and there.
 
-` git clone <repo link> ` to create local copy of remote repo 
+` git clone <repo-link> ` to create local copy of remote repo 
 
 `git status` to check the staging area & more before add/commit/pushing
 
 `git add <file>`to add to staging area
+ - `-A` to add all changes, probably bad practice though
 
 `git commit -m <message>` to add message
 
@@ -47,9 +48,9 @@ General list of all commands used regularly, possibly some errors here and there
 
 ## Rebase a branch
 
-- `checkout` 
+- `checkout <branch-to-rebase>` 
 
-- `rebase`
+- `rebase <new-base>`
 
 - _Fix conflicts_
 
