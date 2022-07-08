@@ -1,6 +1,7 @@
 # Git cheatsheet
 
 General list of all commands used regularly, possibly some errors here and there.
+
 ` git clone <repo link> ` to create local copy of remote repo 
 
 `git status` to check the staging area & more before add/commit/pushing
