@@ -13,7 +13,7 @@ General list of all commands used regularly, possibly some errors here and there
 
 `-f` to force push **ONLY USE WHEN REBASING**
 
-`--set-upstream origin <branch-name>` to Create new upstream branch
+`--set-upstream origin <branch-name>` to create new upstream branch
 
 `git log` to view log of commits - q to exit
 
@@ -21,11 +21,11 @@ General list of all commands used regularly, possibly some errors here and there
 
 `git stash` to Store current commit & switch to last commit
 
-`apply` to Apply the stash
+`apply` to apply the stash
 
 `git checkout <branch-name>` to move branch
 
-`-b` to Make new branch
+`-b` to make new branch
 
 `git branch`to see branches
 
@@ -50,6 +50,6 @@ General list of all commands used regularly, possibly some errors here and there
 
 `rebase`
 
-Fix conflicts
+_Fix conflicts_
 
 `rebase --continue`
