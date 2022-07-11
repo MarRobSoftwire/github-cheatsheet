@@ -23,7 +23,10 @@ General list of all commands used regularly, possibly some errors here and there
 
 `git stash` to Store current commit & switch to last commit
 
-`apply` to apply the stash
+- `apply` to apply the stash
+
+- `drop` to delete the stash
+
 
 `git checkout <branch-name>` to move branch
 
