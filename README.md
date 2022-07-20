@@ -32,6 +32,8 @@ General list of all commands used regularly, possibly some errors here and there
 
  - `-b` to make new branch
 
+    To checkout a previous commit, use git log and checkout the long commit hash (e.g. `git checkout e32172ac35d1fa0f0270236d53bf2bddc617ffa4`)
+
 `git branch`to see branches
 
 `git merge <brange-name>` to merge branches
