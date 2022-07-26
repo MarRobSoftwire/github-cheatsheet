@@ -42,6 +42,8 @@ General list of all commands used regularly, possibly some errors here and there
 
   - `--continue` to continue the rebase after fixing merge conflicts
 
+  `git reset --soft <commit-hash>` revert to commit & stash all changes upto this point **REMEMBER**`--soft` to stash changes. **This is a change of history! Avoid using!**
+
 
 ## Adding to remote github
 
