@@ -45,20 +45,20 @@ General list of all commands used regularly, possibly some errors here and there
   `git reset --soft <commit-hash>` revert to commit & stash all changes upto this point **REMEMBER**`--soft` to stash changes. **This is a change of history! Avoid using!**
 
 
-## Adding to remote github
+## Adding to remote repo
 
-- `add`
+- `add` (stage changes)
 
-- `commit`
+- `commit` (save staged changes locally)
 
-- `push`
+- `push` (add to remote repo)
 
 ## Rebase a branch
 
-- `checkout <branch-to-rebase>` 
+1. `checkout <branch-to-rebase>` 
 
-- `rebase <new-base>`
+2. `rebase <new-base>`
 
-- _Fix conflicts_
+3. _Fix conflicts_
 
-- `rebase --continue`
+4. `rebase --continue` and go back to step 3
