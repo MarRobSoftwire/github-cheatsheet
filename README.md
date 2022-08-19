@@ -62,3 +62,13 @@ General list of all commands used regularly, possibly some errors here and there
 3. _Fix conflicts_
 
 4. `rebase --continue` and go back to step 3
+
+## Rebasing onto main after branching off a feature
+Branch B was branched off A. To rebase branch B onto main:
+1. `git checkout main`
+2. `git pull`
+3. `git checkout A`
+4. `git pull`
+5. `git checkout B`
+6. `git rebase A`
+7. `git rebase --onto main A`
