@@ -72,3 +72,22 @@ Branch B was branched off A. To rebase branch B onto main:
 5. `git checkout B`
 6. `git rebase A`
 7. `git rebase --onto main A`
+
+
+## Setting up a public and private github repo
+(credit: https://24ways.org/2013/keeping-parts-of-your-codebase-private-on-github/) 
+
+Firstly create two github repositories `repo-name` and `private-repo-name`
+
+As normal set up `main` to track the public repo
+```shell
+git remote add origin git@github.com:[user]/repo-name.com.git
+git push -u origin main
+```
+Then set up the `dev` branch to track the private repo
+```shell
+git checkout -b dev
+git remote add private git@github.com:[user]/private-repo-name.com.git
+git push -u private dev
+```
+This will give one local repo with two branches that push to different remote repos.
