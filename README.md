@@ -19,6 +19,8 @@
   - `-b` to make new branch
   - To checkout a previous commit, use git log and checkout the long commit hash (e.g. `git checkout e32172ac35d1fa0f0270236d53bf2bddc617ffa4`)
 - `git branch`to see branches
+  - `-a` to see remote branches too 
+- `git fetch` to get all new commits & update list of remote branches
 - `git merge <dev-brange-name>` to merge branches
   - You typically should be on the main branch
 - `git rebase <new-base>` to rebase current branch
