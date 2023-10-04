@@ -12,12 +12,15 @@
   - `--set-upstream origin <branch-name>` to create new upstream branch
 - `git log` to view log of commits - q to exit
 - `git pull` to update local files
-- `git stash` to Store current commit & switch to last commit
-  - `apply` to apply the stash
-  - `drop` to delete the stash
+- `git stash` to append current commit in a stack & switch to last commit
+  - `pop` applies the latest in the stack
+  - `apply` to apply the stash but leave it in the stack
+  - `drop` to delete the most recent in the stack
+  - `delete` to delete the whole stack
 - `git checkout <branch-name>` to move branch
   - `-b` to make new branch
   - To checkout a previous commit, use git log and checkout the long commit hash (e.g. `git checkout e32172ac35d1fa0f0270236d53bf2bddc617ffa4`)
+  - `checkout <file-name>` resets the file to the previous commit 
 - `git branch`to see branches
   - `-a` to see remote branches too 
 - `git fetch` to get all new commits & update list of remote branches
@@ -25,8 +28,13 @@
   - You typically should be on the main branch
 - `git rebase <new-base>` to rebase current branch
   - `--continue` to continue the rebase after fixing merge conflicts
+  - `-i` is an interactive rebase _see below_
 - `git reset --soft <commit-hash>` revert to commit & stash all changes upto this point
   - **REMEMBER**`--soft` to stash changes. **This is a change of history! Avoid using!**
+- `git revert` appends a new commit that undoes the previous - this is not a change of history
+- `git diff` shows difference between current files & latest commit
+  - `-staged` compares staged changes & latest commit
+- `git cherry-pick` takes a commit (usually from another branch) and append it to the current working HEAD
 
 ## Walkthroughs
 
@@ -69,6 +77,19 @@ $ git checkout B
 $ git rebase A
 $ git rebase --onto main A
 ```
+
+### Interactive Rebase
+Opens a text editor (vim, nano, etc.) in order to carry out a rebase.
+The top lines are the instructions for a rebase, in the order that they will be applied. For example
+```
+<command> <hash> <commit-message>
+pick 1558262 Update README.md
+```
+Below this is a list of commands and a short explanation. The important ones are
+- `pick` uses the commit as it was initally applied
+- `reword` changes the commit message only
+- `edit` pauses the rebase at this point to allow edits to the code
+- `squash` like pick, but squashes this commit into the previous
 
 
 ### Setting up a public and private github repo
