@@ -35,6 +35,7 @@
 - `git diff` shows difference between current files & latest commit
   - `-staged` compares staged changes & latest commit
 - `git cherry-pick` takes a commit (usually from another branch) and append it to the current working HEAD
+- `git bisect` runs a binary search to isolate where a breaking change has been implemented - see below
 
 ## Walkthroughs
 
@@ -91,7 +92,15 @@ Below this is a list of commands and a short explanation. The important ones are
 - `edit` pauses the rebase at this point to allow edits to the code
 - `squash` like pick, but squashes this commit into the previous
 
-
+### Bisect
+```shell
+$ git bisect start
+$ git bisect good <commit>
+$ git bisect bad <commit>
+Bisecting: n revisions left to test after this (roughly n steps)
+[hash] <commit message>
+```
+This begins a binary search, to isolate the commit where a bug appears. At each step declare either good or bad & a new commit will be provided to test
 ### Setting up a public and private github repo
 Adapted from this [guide](https://24ways.org/2013/keeping-parts-of-your-codebase-private-on-github/) 
 
