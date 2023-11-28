@@ -22,7 +22,8 @@
   - To checkout a previous commit, use git log and checkout the long commit hash (e.g. `git checkout e32172ac35d1fa0f0270236d53bf2bddc617ffa4`)
   - `checkout <file-name>` resets the file to the previous commit 
 - `git branch`to see branches
-  - `-a` to see remote branches too 
+  - `-a` to see remote branches too
+  - `-m <new-name>` renames the current branch
 - `git fetch` to get all new commits & update list of remote branches
 - `git merge <dev-brange-name>` to merge branches
   - You typically should be on the main branch
