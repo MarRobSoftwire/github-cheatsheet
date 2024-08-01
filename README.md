@@ -119,3 +119,9 @@ $ git remote add private git@github.com:[user]/private-repo-name.com.git
 $ git push -u private dev
 ```
 This will give one local repo with two branches that push to different remote repos.
+
+### Pull Request Refs
+When you make a PR on github, a merge commit is created at the ref `refs/remotes/pull/PR-NUMBER/merge` on origin. In order to access this you can
+- Pull the refs with `git fetch origin +refs/pull/*:refs/remotes/origin/pr/*`
+- Checkout the commit at `origin/pr/PR_NUMBER/merge`
+Github Actions will use this commit by default, so any CI tests will be running on this commit, not your branch.
